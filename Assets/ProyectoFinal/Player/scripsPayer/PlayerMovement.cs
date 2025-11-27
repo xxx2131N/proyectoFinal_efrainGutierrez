@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
             Vector3 direccion = (transform.forward * movimientoVertical + transform.right * movimientoHorizontal).normalized;
             velocity = direccion * speed;
         }
-        velocity.y = rb.linearVelocity.y; rb.linearVelocity = velocity;
+        velocity.y = rb.linearVelocity.y; 
+        rb.linearVelocity = velocity;
     } 
 }
